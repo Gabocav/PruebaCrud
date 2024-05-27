@@ -1,0 +1,9 @@
+// Exportar la instancia de Sequelize y el objeto DataTypes
+const { Sequelize, DataTypes } = require('sequelize');
+
+const sequelize = new Sequelize({
+    dialect: 'sqlite',
+    storage: './database.sqlite'
+});
+
+module.exports = { sequelize, DataTypes };
